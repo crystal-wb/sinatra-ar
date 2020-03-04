@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p><%=@message %></p>
+        <a href='/remove'>Remove a User</a>
+        <br>
+        <a href='/new'>Add a User</a>
+        <% @users.each do |user| %>
+            <p><a href="/show?id=<%=user.id%>"><%=user.name%>, <%=user.email%></a> (<a href="/edit?id=<%=user.id%>">edit</a>)</p>
+        <% end %>
+    </body>
+</html>
+

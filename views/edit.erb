@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <form action='/update' method='post'>
+            <input type='hidden' name='id' value="<%=@user.id%>">
+            <label for='name'>Name</label>
+            <input id='name' type='text' name='name' value="<%=@user.name%>">
+            <label for='email'>Email</label>
+            <input id='email' type='text' name='email' value="<%=@user.email%>">
+            <input type='submit' value='Update'>
+        </form>
+        <a href='/'>Home</a>
+    </body>
+</html>

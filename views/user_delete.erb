@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+         <form action='/delete' method='post'>
+          <label for='id'>Choose a user:</label>
+          <select id='id' name='id'>
+            <% @users.each do |user| %>
+                <option value="<%=user.id%>"><%=user.name%></option>
+            <% end %>
+          </select>
+          <input type="submit" value="Delete">
+        </form> 
+        <br>
+        <a href='/'>Home</a>
+    </body>
+</html>
+
+ 
