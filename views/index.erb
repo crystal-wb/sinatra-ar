@@ -1,0 +1,3 @@
+<% @users.each do |user| %>
+<p><%=user.name%>, <%=user.email%> <a href="/edit?id=<%=user.id%>">edit</a>, <a href="/delete?id=<%=user.id%>">Delete</a></p>
+<% end %>
