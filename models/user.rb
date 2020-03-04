@@ -1,4 +1,4 @@
-require "./app"
+# require "./app"
 class User < ActiveRecord::Base
     # user = User.new
     # user.email = "bob@email.com"
